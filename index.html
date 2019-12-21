@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ProjetInternet</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/main.js"></script>
+</head>
+<body onload="load()">
+    <!-- HEADER -->
+    <header>
+        <div id="hr2"></div>
+        <div class="nav-upper">
+            <div class="div-logo">
+                <a href="index.html">
+                    <img class="logo" src="images/logo.png" />
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!--BODY-->
+    <!-- COMPETENCES-->
+    <div class="title">
+        <p class="title-text">Bienvenue!</p>
+    </div>
+
+
+    <!-- MENU OPTIONS -->
+    <section class="menu-departments">
+        <h2>Sections</h2>
+        <nav>
+            <ul>
+                <li><button class="apropos" onclick="apropos()">À propos (CV)</button></li>
+                <li><button class="ville" onclick="ville()">Ma ville natale</button></li>
+                <li><button class="passetemps" onclick="passetemps()">Mes passe-temps</button></li>
+                <li><button class="sports" onclick="sports()">Mes sports préférés</button></li>
+                <li><button class="activites" onclick="activites()">Activités de loisirs</button></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- CONTAINER WITH THE IMG / TEXT -->
+    <div class="section-container">
+        <img class="aproposimg" src="" alt="" />
+        <p id="text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et orci non orci euismod bibendum et ut lorem. Proin non mi dapibus, pellentesque neque sit amet, euismod arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec eget accumsan orci. Maecenas sed velit vitae neque mollis blandit sit amet a turpis. Praesent et convallis dui. Donec vel eros ut arcu tempor vestibulum. Fusce arcu augue, scelerisque quis ex et, euismod vulputate odio. Nam dignissim nec erat eget tempor. Cras et lacus suscipit neque ultrices facilisis et vel libero. Vivamus non mollis nisi.</p>
+        <p id="text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et orci non orci euismod bibendum et ut lorem. Proin non mi dapibus, pellentesque neque sit amet, euismod arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec eget accumsan orci. Maecenas sed velit vitae neque mollis blandit sit amet a turpis. Praesent et convallis dui. Donec vel eros ut arcu tempor vestibulum. Fusce arcu augue, scelerisque quis ex et, euismod vulputate odio. Nam dignissim nec erat eget tempor. Cras et lacus suscipit neque ultrices facilisis et vel libero. Vivamus non mollis nisi.</p>
+    </div>
+
+    <!-- SLIDESHOW -->
+    <div class="slideshow">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img id="slideshow1" src="images/slideshow1.jpg" style="width:100%">
+                <div id="caption1" class="text">Mon environnement de travail à la maison!</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img id="slideshow2" src="images/slideshow2.jpg" style="width:100%">
+                <div id="caption2" class="text">Ma graduation de DES!</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img id="slideshow3" src="images/slideshow3.jpg" style="width:100%">
+                <div id="caption3" class="text">Hackfest Montréal 2017!</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>  <!-- The "<" character -->
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>   <!-- The ">" character -->
+
+        </div>
+        <br>
+
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="hr"></div>
+    <footer>
+        <div class="container">
+            <img src="images/logo-footer.png" alt="Samuel Paquette Logo" />
+            <ul class="social">
+                <li>
+                    <a href="https://www.facebook.com/samuel.paquette.96"><img src="images/facebook.png" width="32" height="32" alt="Facebook link"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/user/Satucre"><img src="images/youtube.png" width="32" height="32" alt="Youtube link"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
